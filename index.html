@@ -4,8 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <div>
+    <ul>
+      <li><input type="radio" id="js-allchara-radio" name="kimetsu" onclick="loadData('all')">全キャラクター</li>
+      <li><input type="radio" id="js-kisatsu-radio" name="kimetsu" onclick="loadData('kisatsutai')">鬼殺隊</li>
+      <li><input type="radio" id="js-hashira-radio" name="kimetsu" onclick="loadData('hashira')">柱</li>
+      <li><input type="radio" id="js-oni-radio" name="kimetsu" onclick="loadData('oni')">鬼</li>
+    </ul>
+  </div>
+  <div id="loading"></div>
+  <div id="js-target" class="chara"></div>
   <script src="index.js"></script>
 </body>
 </html>
