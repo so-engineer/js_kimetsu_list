@@ -10,7 +10,6 @@ li{
 .chara {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
 }
 .chara > div {
   flex-basis: 33%;
